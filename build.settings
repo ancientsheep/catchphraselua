@@ -1,0 +1,56 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	
+	orientation = {
+		default = "landscapeRight",
+		supported = { "landscapeRight", }
+	},
+	
+	iphone = {
+		plist = {
+			UIStatusBarHidden = true,
+			UIPrerenderedIcon = true, -- set to false for "shine" overlay
+
+            CFBundleIconFile = "Icon.png",
+            UIPrerenderedIcon = true,
+            CFBundleIconFiles =
+            {
+                "Icon.png", 
+                "Icon@2x.png", 
+                "Icon-72.png", 
+            },
+            
+		   UIApplicationExitsOnSuspend = false,
+
+            -- iOS app URL schemes:
+            CFBundleURLTypes =
+            {
+                {
+                    CFBundleURLSchemes =
+                    {
+                        "fb194041857401932", 
+                    }
+                }
+            },
+
+            UIAppFonts =
+            {
+            	"soupofjustice.ttf",
+                "assets/fonts/soupofjustice.ttf",
+                "aglight.otf",
+                "assets/fonts/aglight.otf",
+            }
+		}
+	},
+	
+	--[[
+	-- Android permissions
+
+	androidPermissions = {
+  		"android.permission.INTERNET",
+  	},
+
+	]]--
+}

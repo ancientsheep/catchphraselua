@@ -1,0 +1,21 @@
+@font-face {
+	font-family: soupofjustice;
+	src: url('soupofjustice.ttf');
+}
+
+
+html {
+	-webkit-text-size-adjust: none;
+	background-color: 'transparent';
+	color: #000;
+	padding: '20px';
+	font-size: '20px';
+	font-family: soupofjustice,Arial,Helvetica;
+	text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+h1,h2,h3 {
+	color: #009900;
+	font-weight: bold;
+}
+
